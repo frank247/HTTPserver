@@ -1,9 +1,59 @@
-# libevent_test_http_srv
-C++ http server samples based on libevent
+Лабораторная работа #7 – простейший web-сервер своими руками на С++
 
-## Posts about libevent_test_http_srv
-- [Lightweight HTTP Server in less than 40 Lines on libevent and C++11](https://kukuruku.co/post/lightweight-http-server-in-less-than-40-lines-on-libevent-and-c-11/)  
-- [Свой http-сервер менее чем в 40 строк кода на libevent и C++11](https://habrahabr.ru/post/217437/)  
+Цель: Изучить возможности языка программирования С++ для построения настоящего веб-приложения.
 
-**NOTE:**  
-The [MIF](https://github.com/tdv/mif) project includes as part a some ideas from this test project for http transport demonstrated in [http](https://github.com/tdv/mif/tree/master/examples/http) example.  
+Ход работы:
+1.	Создать новый git-репозиторий “HTTPServer” в личном кабинетеgithub.
+
+создал репозиторий на Ginhub
+
+2.	Подключить в созданный репозиторий данные изhttps://github.com/tdv/libevent_test_http_srv
+
+Подключился с помощъю кода git clone 
+
+3.	Клонировать проект в рабочий каталог на своем сервере
+
+клонировал проект 
+
+4.	Настроить vscode для работы с проектом:
+
+Для первого примера (папка sample1) создать файлы:
+
+tasks.json – конфигурация для компиляции первого 
+
+примера
+
+Пример задачи компиляции:
+
+{
+
+            "label": "sample1",
+
+"type": "shell",
+
+            "command": "g++ sample1/main.cpp -std=c+
+            
+            +11 -levent -o sample1.exe",
+            
+            "group": {
+            
+                "kind": "build",
+            
+                "isDefault": true
+            
+            }
+}
+
+5.	Компилировать и запустить веб-приложение, 
+проверить работоспособность.
+
+компилировал и запустил приложение проверил работоспособность
+
+При возникновении ошибки компиляции прописал код 
+# sudo apt-get install libevent-dev
+
+6.	Дополнить конфигурацию vscodeдля работы со вторым примером (папка sample2) 
+
+прописал код для sample2
+
+Вывод:Изучил возможности языка программирования С++ для построения настоящего веб-приложения.
